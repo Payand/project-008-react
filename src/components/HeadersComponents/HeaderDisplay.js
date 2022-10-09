@@ -1,12 +1,10 @@
 import HeaderButtons from "./HeaderButtons";
 
-const HeaderDisplay = (props) => {
-  const headerDisplay = props.props;
-  console.log(headerDisplay);
+const HeaderDisplay = ({ navDisplay }) => {
   return (
     <div className="container">
       <div className="flex-header-text-container">
-        {headerDisplay.map((el) => {
+        {navDisplay.map((el) => {
           return (
             <>
               <h1>{el.head}</h1>

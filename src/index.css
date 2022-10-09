@@ -37,7 +37,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   background-image: var(--header-img-gradient),
-    url("../src/images/Captain-America-The-Winter-Soldier.jpg");
+    url("../public/images/Captain-America-The-Winter-Soldier.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

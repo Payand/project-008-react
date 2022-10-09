@@ -1,6 +1,4 @@
-const MainMovieSection = (props) => {
-  const movies = props.props.props;
-  console.log(movies);
+const MainMovieSection = ({ props: movies }) => {
   return (
     <section>
       <div id="movies" className="container-movies">

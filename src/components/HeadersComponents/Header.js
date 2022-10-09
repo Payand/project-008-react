@@ -6,9 +6,9 @@ const Header = (props) => {
     <>
       <header>
         <nav id="top" className="container">
-          <HeaderNav props={props.props.nav} />
+          <HeaderNav {...props.props} />
         </nav>
-        <HeaderDisplay props={props.props.navDisplay} />
+        <HeaderDisplay {...props.props} />
       </header>
     </>
   );
