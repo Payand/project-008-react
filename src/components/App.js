@@ -3,6 +3,7 @@ import Header from "./HeadersComponents/Header";
 import MainMovie from "./MainComponenetsMovies/MainMovie";
 import MainTv from "./MainComponentsTv/MainTv";
 import MainDoc from "./MainComponentsDocuments/MainDoc";
+import Footer from "./FooterComponents/Footer";
 import { objApi } from "../Api";
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
       <MainTv props={objApi.tv} />
       {/* main tv section ends */}
       <MainDoc props={objApi.documentary} />
+      {/* footer starts */}
+      <Footer />
+      {/* footer ends */}
     </>
   );
 };

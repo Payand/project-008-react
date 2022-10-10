@@ -9,8 +9,8 @@ const HeaderNav = ({ nav }) => {
       <ul>
         {nav.map((el) => {
           return (
-            <li id={el} key={el}>
-              {el}
+            <li key={el}>
+              <a href={"#" + el}>{el}</a>
             </li>
           );
         })}
