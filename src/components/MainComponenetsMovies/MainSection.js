@@ -1,10 +1,10 @@
-const MainMovieSection = ({ props: movies }) => {
+const MainSection = ({ props: movies }) => {
   return (
     <section>
       <div id="movies" className="container-movies">
         {movies.map((movie) => {
           return (
-            <div className="flex-movies-container">
+            <div key={movie.title} className="flex-movies-container">
               <img className="img-card" src={movie.img} alt="poster" />
               <div className="quality">{movie.quality}</div>
               <div className="flex-card-box">
@@ -30,4 +30,4 @@ const MainMovieSection = ({ props: movies }) => {
   );
 };
 
-export default MainMovieSection;
+export default MainSection;

@@ -1,11 +1,11 @@
 import MainMovieHead from "./MainMovieHead";
-import MainMovieSection from "./MainMovieSection";
+import MainSection from "./MainSection";
 
 const Main = (props) => {
   return (
     <main>
       <MainMovieHead />
-      <MainMovieSection {...props} />
+      <MainSection {...props} />
     </main>
   );
 };

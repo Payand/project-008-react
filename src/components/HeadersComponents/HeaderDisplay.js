@@ -7,17 +7,17 @@ const HeaderDisplay = ({ navDisplay }) => {
         {navDisplay.map((el) => {
           return (
             <>
-              <h1>{el.head}</h1>
+              <h1 key={el.head}>{el.head}</h1>
               <div>
                 <ul>
-                  <li>{el.quality}</li>
-                  <li>
+                  <li key={el.quality}>{el.quality}</li>
+                  <li key={el.rate}>
                     <i className="fa-solid fa-star"></i> {el.rate}
                   </li>
-                  <li>{el.duration} min</li>
-                  <li>
-                    <a href="">{el.genre[0]}</a>
-                    <a href="">{el.genre[1]}</a>
+                  <li key={el.duration}>{el.duration} min</li>
+                  <li key={el.genre[0]}>
+                    <a href="http://www.google.com">{el.genre[0]}</a>
+                    <a href="http://www.google.com">{el.genre[1]}</a>
                   </li>
                 </ul>
               </div>

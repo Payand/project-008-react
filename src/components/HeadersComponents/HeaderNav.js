@@ -9,7 +9,7 @@ const HeaderNav = ({ nav }) => {
       <ul>
         {nav.map((el) => {
           return (
-            <li id={"#" + el} key={el}>
+            <li id={el} key={el}>
               {el}
             </li>
           );
